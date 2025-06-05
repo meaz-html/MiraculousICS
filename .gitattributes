@@ -1,11 +1,29 @@
-# Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
-*.rb linguist-language=Python
+# .gitattributes configuration for customizing language detection on GitHub
 
-# Replace any whitespace in the language name with hyphens:
-*.glyphs linguist-language=OpenStep-Property-List
+# By default, GitHub detects languages based on file extensions.
+# Only use the settings below if you want to override GitHub's default detection.
 
-# Language names are case-insensitive and may be specified using an alias.
-# So, the following three lines are all functionally equivalent:
-*.es linguist-language=py
-*.es linguist-language=PY
-*.es linguist-language=PYTHON
+# EXAMPLES:
+
+# 1. If you use a custom extension (like .myext) for Python files:
+# *.myext linguist-language=Python
+
+# 2. If you want .rb files (normally Ruby) to be detected as Python:
+# *.rb linguist-language=Python
+# (Only use this if your .rb files are actually Python code.)
+
+# 3. To classify .glyphs files as OpenStep-Property-List:
+# *.glyphs linguist-language=OpenStep-Property-List
+
+# 4. Language names are case-insensitive and aliases are supported:
+# *.es linguist-language=py
+# *.es linguist-language=PY
+# *.es linguist-language=PYTHON
+
+# 5. You do NOT need to override standard file extensions (like .py, .js, .java)
+#    unless you have a specific need to do so.
+
+# For more info, see: https://github.com/github/linguist#overrides
+
+# ----
+# Add your custom language mappings below this line:
